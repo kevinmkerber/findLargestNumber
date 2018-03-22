@@ -1,0 +1,35 @@
+ <DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Finding largest numbers in array</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+
+<script>
+function largestOfFour(arr) {
+  var largestNumsArr = [];
+  for (var x = 0; x < arr.length; x++) {
+    var largestNum = arr[x].reduce(function(a, b){return Math.max(a, b);});
+    largestNumsArr.push(largestNum);
+  }
+  return largestNumsArr;
+}
+
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+
+</script>
+
+
+<body>
+
+</body>
+
+</html>
